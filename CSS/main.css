@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Beginners Styles */
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  background-color: darkolivegreen;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: center;
+}
+
+/* wrapper obviously wraps the content on page */
+
+#wrapper {
+  width: 80%;
+  height: 100%;
+  border: 0.688rem solid white;
+  border-radius: 15rem;
+  background-color: sandybrown;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+/* img {
+  display: block;
+  margin: auto;
+} */
+
+/* above comment is just left to remind me that there are multiple ways to do the same thing */
+
+h1 {
+  text-align: center;
+  background-color: whitesmoke;
+  width: 12.5rem;
+  height: 7rem;
+  color: black;
+  border: 0.625rem solid darkolivegreen;
+  padding: 1.25rem;
+  margin: 2rem auto;
+  box-shadow: 2rem 0.8rem 1rem darkolivegreen;
+  text-shadow: 0.3rem 0.1rem 0.5rem darkolivegreen;
+  border-radius: 20rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: whitesmoke;
+  background-color: darkolivegreen;
+  font-weight: bold;
+  box-shadow: 0.7rem 0.8rem 1rem black;
+}
+
+p {
+  line-height: 2.5rem;
+  color: black;
+}
+
+/* List Style */
+
+a {
+  text-decoration: underline;
+  color: darkolivegreen;
+  background-color: white;
+  box-shadow: 1rem 1rem 1rem darkolivegreen;
+  border-radius: 25%;
+  box-sizing: content-box;
+}
+
+/* Changes color when you hover over list/link */
+a:hover {
+  color: black;
+}
+
+/* ul designs the bullet points part of the list */
+
+ul {
+  list-style: none;
+  color: black;
+  margin: 2rem auto;
+  line-height: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* couldnt get list style disc to center with the actual list title name link*/
+
+h3 {
+  color: darkolivegreen;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: whitesmoke;
+  font-weight: normal;
+  box-shadow: 0.7rem 0.8rem 1rem black;
+}
+
+h4 {
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: darkolivegreen;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  box-shadow: 0.7rem 0.8rem 1rem whitesmoke;
+}
+
+#catphoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/* forms style */
+
+form {
+  border: 0.688rem solid black;
+  border-radius: 10rem;
+  background-color: darkolivegreen;
+  padding-top: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+/* Cant figure out why my search and contact forms wont wrap. I think that is what its called. I want my forms to stay center as the page shrinks */
+
+/* adding > is a child combinator selector and selects the first child of the form (div)  */
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  border: 0.625rem solid sandybrown;
+  border-radius: 10rem;
+  padding: 0.375rem 0.75rem;
+  background-color: whitesmoke;
+}
+
+input textarea {
+  font-size: inherit;
+  display: inline-block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+input [type="checkbox"] {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+#form-checkbox > label {
+  display: inline-block;
+  margin-left: 25%;
+}
+
+/* I cant figure out how to shorten the gap between the label and checkbox */
+
+input[type="number"] {
+  width: 20%;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+form > button {
+  background-color: whitesmoke;
+  border: none;
+  padding: 0.375rem 2rem;
+  border-radius: 0.25rem;
+  font-size: 100%;
+  cursor: pointer;
+  margin-bottom: 8%;
+}
+
+button:hover {
+  background-color: sandybrown;
+}
+
+#search button {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: 0.25rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 2rem;
+  font-size: 100%;
+}
+
+#search input {
+  font-size: 100%;
+  width: 25rem;
+  padding: 0.25rem 2rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+#search button:hover {
+  background-color: sandybrown;
+}
+
+#login input {
+  padding-top: 0.8%;
+  width: 50%;
+}
+/* styles bar */
+
+#login {
+  padding-bottom: 5%;
+  width: 90%;
+}
+
+#login button {
+  background-color: whitesmoke;
+  display: inline-block;
+  border: 0.25rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 2rem;
+  font-size: 100%;
+  width: 28%;
+}
+
+#login button:hover {
+  background-color: sandybrown;
+}
+
+#contact input {
+  font-size: 100%;
+  width: 25rem;
+  padding: 0.25rem 2rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
